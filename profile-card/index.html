@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card</title>
+  <style>
+    
+    :root {
+      --page-bg: #eef2f0;
+      --card-bg: #ffffff;
+      --border: #dcdfe2;
+      --text: #1c2321;
+      --text-muted: #5a6662;
+      --accent: #1d6b57;
+      --accent-dark: #0f3f31;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: var(--page-bg);
+      color: var(--text);
+    }
+
+    
+    .page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+
+    
+    .profile-card__photo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 16px;
+      border: 3px solid var(--accent);   
+      object-position: center 15%;       
+    }
+
+    .profile-card__photo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 16px;
+    }
+
+    .profile-card__name {
+      margin: 0 0 4px;
+      font-size: 1.5rem;
+      line-height: 1.2;
+    }
+
+    .profile-card__role {
+      margin: 0 0 16px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .profile-card__bio {
+      margin: 0 0 24px;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: var(--text-muted);
+    }
+
+    
+    .profile-card__actions {
+      display: flex;
+      gap: 12px;
+      width: 100%;
+    }
+
+    .btn {
+      flex: 1;
+      padding: 10px 16px;
+      border: 2px solid var(--accent);
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+    }
+
+    
+    .btn--filled {
+      background: var(--accent);
+      color: #ffffff;
+    }
+
+    .btn--filled:hover {
+      background: var(--accent-dark);
+      border-color: var(--accent-dark);
+    }
+
+   
+    .btn--outline {
+      background: transparent;
+      color: var(--accent);
+    }
+
+    .btn--outline:hover {
+      background: var(--accent);
+      color: #ffffff;
+    }
+
+    .btn:focus-visible {
+      outline: 3px solid var(--accent-dark);
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page">
+    <main class="profile-card">
+      <img class="profile-card__photo" src="photo.jpg" alt="Photo of Abhijithu K R" />
+      <h1 class="profile-card__name">Abhijithu K R</h1>
+      <p class="profile-card__role">Front End Development Intern</p>
+      <p class="profile-card__bio">I am a passionate web developer who loves creating interactive and user-friendly web applications.</p>
+      <div class="profile-card__actions">
+        <a class="btn btn--filled" href="mailto:abhijithukarattilla@gmail.com">Contact</a>
+        <a class="btn btn--outline" href="https://github.com/abhijithukr">GitHub</a>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>
