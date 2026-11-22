@@ -1,18 +1,14 @@
-# Internship
+# Profile Card
 
-Front-end development internship tasks.
+A simple, responsive profile card built with HTML and CSS.
 
-## Profile Card
+**Live:** https://abhijithukr.github.io/profile-card/
 
-A simple profile card built with HTML and CSS.
+## Files
 
-**Live:** https://abhijithukr.github.io/internship/profile-card/
+- `index.html` — the card markup and styles
+- `photo.jpg` — profile photo
 
-### Files
+## Run locally
 
-- `profile-card/index.html` — the card markup and styles
-- `profile-card/photo.jpg` — profile photo
-
-### Run locally
-
-Open `profile-card/index.html` in any browser.
+Open `index.html` in any browser.
